@@ -245,7 +245,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
     	  String greenBlue = JOptionPane.showInputDialog(null, "Enter a positive greenBlueReduction value < 1 such as .5 or .9 ");  
     	 
     	  try {
-    		  double r = Double.valueOf(red);
+    		  double rr = Double.valueOf(red);
     		  double gb = Double.valueOf(greenBlue);
     	//	  Logic.makeSunset(picture, r, gb);
     	  }catch(Exception e) {
@@ -285,7 +285,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
     	  /* 
            * Uncomment the following to connect the blur button in the GUI to your provided solution.
            */
-    //    Logic.blur(picture);
+    	  Logic.blur(picture);
         repaint();
       }
     });
